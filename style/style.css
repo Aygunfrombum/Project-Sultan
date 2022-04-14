@@ -402,6 +402,9 @@ hr {
   line-height: 12px;
   letter-spacing: 0.15em;
 }
+.ariel {
+  margin-bottom: 25px;
+}
 .card-basket:active {
   color: #fff;
 }
@@ -430,7 +433,7 @@ hr {
   color: #ffc85e;
 }
 
-.product-category + p {
+.product-category p {
   font-weight: 300;
   font-size: 20px;
   line-height: 120%;
@@ -441,13 +444,14 @@ hr {
   display: grid;
 }
 
-.category-item > p {
+.category-item a {
   font-weight: 500;
   font-size: 16px;
   line-height: 130%;
   color: #3f4e65;
   justify-self: center;
   margin-top: 20px;
+  text-decoration: none;
 }
 #category {
   margin-bottom: 100px;
@@ -462,6 +466,41 @@ hr {
 }
 
 /* carousel section is ends */
+
+/* best-goods section starts */
+
+#best-goods {
+  width: 1320px;
+}
+.bestgoods {
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 120%;
+  text-transform: uppercase;
+  margin: 100px 0 15px 0;
+}
+.bestgoods span {
+  color: #ffc85e;
+}
+.bestgoods p {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 120%;
+  color: #3f4e65;
+}
+.thebest {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 55px 0 150px 0;
+}
+.thebest-item {
+  display: inline;
+  margin: 0 10px;
+  background: #ffffff;
+  box-shadow: 0px 15px 70px -11px rgba(43, 28, 1, 0.07);
+  border-radius: 10px;
+}
+/* best-goods section ends */
 
 @media (max-width: 576px) {
   .primary-navbar {
