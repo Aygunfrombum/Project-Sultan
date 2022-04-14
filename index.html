@@ -25,8 +25,8 @@
     <link rel="stylesheet" href="style/style.css" />
   </head>
   <body>
-    <!-- header starts -->
-    <header>
+    <!-- header starts for desktop-->
+    <header class="desktop-header">
       <div class="container">
         <div class="row">
           <nav class="primary-navbar">
@@ -109,9 +109,33 @@
         </div>
       </div>
     </header>
-    <!-- header ends -->
+    <!-- header ends for desktop-->
+    <!-- header starts for mobile -->
+
+    <header class="mobile-header">
+      <div class="container-fluid"></div>
+      <ul class="dropdown-menu">
+        <li><h6 class="dropdown-header">Dropdown header</h6></li>
+        <li><a class="dropdown-item" href="#">Action</a></li>
+        <li><a class="dropdown-item" href="#">Another action</a></li>
+      </ul>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">Regular link</a></li>
+        <li>
+          <a class="dropdown-item active" href="#" aria-current="true"
+            >Active link</a
+          >
+        </li>
+        <li><a class="dropdown-item" href="#">Another link</a></li>
+      </ul>
+    </header>
+
+    <!-- header ends for mobile -->
     <!-- intro section starts -->
     <section id="intro">
+      <div class="blur">
+        <!-- <img class="blur" src="" alt=""> -->
+      </div>
       <div class="container">
         <div class="row">
           <div class="col-md-5 intro-col">
@@ -369,14 +393,132 @@
     <!-- promotional-product section ends-->
 
     <!-- category section starts -->
-    <section id="category">
-      <div class="container">
-        <div class="row">
+    <div class="container">
+      <div class="row">
+        <section id="category">
           <div class="product-category"><span>категории </span> товаров</div>
           <p>10 000+ ходовых позиций по спецмальным ценам</p>
-        </div>
+          <div class="grid-container">
+            <div class="category-item">
+              <img src="image/category-1.svg" alt="" />
+              <p>Бытовая химия</p>
+            </div>
+            <div class="category-item">
+              <img src="image/category-2.svg" alt="" />
+              <p>Косметика и гигиена</p>
+            </div>
+            <div class="category-item">
+              <img src="image/category-3.svg" alt="" />
+              <p>Товары для дома</p>
+            </div>
+            <div class="category-item">
+              <img src="image/category-4.svg" alt="" />
+              <p>Товары для детей и мам</p>
+            </div>
+            <div class="category-item">
+              <img src="image/category-5.svg" alt="" />
+              <p>Посуда</p>
+            </div>
+          </div>
+        </section>
       </div>
-    </section>
+    </div>
+
     <!-- category section ends -->
+    <!-- carousel section starts -->
+    <div class="container">
+      <div class="row">
+        <section id="carousel">
+          <div
+            id="carouselExampleCaptions"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="image/housewife.svg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>First slide label</h5>
+                  <p>
+                    Some representative placeholder content for the first slide.
+                  </p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="..." class="d-block w-100" alt="..." />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Second slide label</h5>
+                  <p>
+                    Some representative placeholder content for the second
+                    slide.
+                  </p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="..." class="d-block w-100" alt="..." />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Third slide label</h5>
+                  <p>
+                    Some representative placeholder content for the third slide.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <!-- carousel section ends -->
   </body>
 </html>
