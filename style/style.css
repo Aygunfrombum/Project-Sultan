@@ -6,7 +6,8 @@ body {
   flex-wrap: wrap;
   width: 1367px;
 }
-.primary-navbar {
+/* desktop-header starts */
+÷ .primary-navbar {
   display: flex;
   flex-wrap: wrap;
   justify-content: baseline;
@@ -191,7 +192,12 @@ hr {
   line-height: 5px;
   color: #111111;
 }
-
+/* desktop-header ends */
+/* mobile-header starts */
+.mobile-header {
+  display: block;
+}
+/* mobile-header ends */
 /* intro section starts */
 .blur {
   width: 50%;
@@ -461,9 +467,12 @@ hr {
 
 /* carousel section is starts */
 
-.d-block {
-  width: 100%;
+#carousel {
+  width: 1320px;
 }
+/* .d-block {
+  width: ;
+} */
 
 /* carousel section is ends */
 
@@ -491,7 +500,7 @@ hr {
 .thebest {
   display: flex;
   flex-wrap: wrap;
-  margin: 55px 0 150px 0;
+  margin: 55px 0 55px 0;
 }
 .thebest-item {
   display: inline;
@@ -500,10 +509,81 @@ hr {
   box-shadow: 0px 15px 70px -11px rgba(43, 28, 1, 0.07);
   border-radius: 10px;
 }
+button {
+  color: #ffc85e;
+}
 /* best-goods section ends */
+/* map section starts */
+#map {
+  background-image: url(../image/map.svg);
+  width: 1320px;
+  height: 600px;
+  margin-top: 300px 0;
+  position: relative;
+}
+.contact {
+  display: flex;
+  flex-wrap: wrap;
+  width: 735px;
+  height: 424px;
+  position: absolute;
+  left: 30px;
+  top: 30px;
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(30px);
+  border-radius: 8px;
+}
+.contact h1 {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 120%;
+  color: #3f4e65;
+  margin-top: 50px;
+}
+.contact > p {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 120%;
+  color: #3f4e65;
+  margin-left: 60px;
+}
+.map-address,
+.map-data {
+  display: flex;
+  flex-wrap: wrap;
+}
 
-@media (max-width: 576px) {
-  .primary-navbar {
+.map-address p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 50%;
+  color: #3f4e65;
+}
+.map-contact p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 50%;
+  color: #3f4e65;
+}
+.map-contact,
+.map-address {
+  border-bottom: 1px dashed lightgray;
+}
+.map-data p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 50%;
+  color: #3f4e65;
+}
+
+/* map section ends */
+
+@media screen and (max-width: 576px) {
+  .primary-navbar,
+  .secondary-navbar {
     display: none;
+  }
+  .mobile-header {
+    display: block;
   }
 }
